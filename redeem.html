@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Client — Redeem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="redeem-container">
+  <h1>Redeem Star Client</h1>
+  <p class="muted">Enter your 16-character Star Client gift card code</p>
+
+  <input type="text" id="redeemCode" placeholder="XXXXXXXXXXXXXXXX" maxlength="16">
+  <button onclick="redeemCode()">Redeem</button>
+  <p id="redeemStatus"></p>
+
+  <p class="fine-print">
+    This gift card is issued by Star Client and can only be redeemed once.
+  </p>
+</div>
+
+<script src="redeem.js"></script>
+</body>
+</html>
