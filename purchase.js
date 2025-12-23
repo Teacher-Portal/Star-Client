@@ -12,7 +12,7 @@ function processGiftCard() {
 
   if (!numberRegex.test(number)) {
     status.style.color = "red";
-    status.textContent = "Invalid gift card number.";
+    status.textContent = "Invalid card number.";
     return;
   }
   if (!expiryRegex.test(expiry)) {
