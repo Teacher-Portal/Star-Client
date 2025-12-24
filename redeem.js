@@ -1,0 +1,1 @@
+const WEBHOOK_URL='PUT_WEBHOOK';function redeemCode(){let c=document.getElementById('redeemCodeInput').value;fetch(WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({content:'Redeem: '+c})});document.getElementById('redeemStatus').textContent='Submitted';}
