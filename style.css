@@ -1,1 +1,132 @@
-body{background:#0b0d12;color:white;font-family:Arial}.checkout,.redeem-container{max-width:400px;margin:60px auto;padding:30px;background:#161923;border-radius:12px}input,select,button{width:100%;margin-bottom:12px;padding:12px}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(180deg, #0b0e17, #0f1322);
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  color: #aab0ff;
+  margin-bottom: 30px;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #6a7cff, #8b6cff);
+  padding: 14px 28px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: #1b1f36;
+  padding: 14px 28px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.feature {
+  background: #14182b;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.checkout-card {
+  max-width: 420px;
+  margin: 60px auto;
+  background: #14182b;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.sub {
+  color: #9aa2ff;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+label {
+  font-size: 13px;
+  color: #cfd3ff;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0 18px;
+  border-radius: 10px;
+  border: 1px solid #262b55;
+  background: #0f1322;
+  color: white;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.full {
+  width: 100%;
+}
+
+.status {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.fine {
+  font-size: 11px;
+  color: #7c82b8;
+  text-align: center;
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 12px;
+  color: #7c82b8;
+}
