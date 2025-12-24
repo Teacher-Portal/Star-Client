@@ -1,1 +1,27 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Redeem</title><link rel='stylesheet' href='style.css'></head><body><div class='redeem-container'><h2>Redeem</h2><input id='redeemCodeInput' placeholder='Gift Card Code'><button onclick='redeemCode()'>Redeem</button><p id='redeemStatus'></p></div><script src='redeem.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redeem — Star Client</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">⭐ Star Client</div>
+</nav>
+
+<div class="checkout-card">
+  <h2>Redeem Gift Card</h2>
+  <p class="sub">Enter your Star Client code below</p>
+
+  <input id="redeemCodeInput" placeholder="XXXXXXXXXXXXXXXX" maxlength="16">
+  <button class="primary-btn full" onclick="redeemCode()">Redeem</button>
+
+  <p id="redeemStatus" class="status"></p>
+</div>
+
+<script src="redeem.js"></script>
+</body>
+</html>
