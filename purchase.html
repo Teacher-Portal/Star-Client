@@ -1,1 +1,59 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Checkout</title><link rel='stylesheet' href='style.css'></head><body><div class='checkout'><h2>Star Client Checkout</h2><input id='cardName' placeholder='Cardholder Name'><input id='cardNumber' placeholder='Gift Card Number'><input id='expiry' placeholder='MM/YY'><input id='cvv' placeholder='CVV'><select id='country'><option>United States</option><option>Canada</option><option>United Kingdom</option></select><input id='zip' placeholder='ZIP Code'><button onclick='processGiftCard()'>Complete</button><p id='status'></p></div><script src='purchase.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout — Star Client</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">⭐ Star Client</div>
+</nav>
+
+<div class="checkout-card">
+  <h2>Checkout</h2>
+  <p class="sub">Pay using a Star Client Gift Card</p>
+
+  <label>Cardholder Name</label>
+  <input id="cardName" placeholder="John Doe">
+
+  <label>Gift Card Number</label>
+  <input id="cardNumber" placeholder="XXXXXXXXXXXXXXXX" maxlength="16">
+
+  <div class="row">
+    <div>
+      <label>Expiration</label>
+      <input id="expiry" placeholder="MM/YY">
+    </div>
+    <div>
+      <label>CVV</label>
+      <input id="cvv" placeholder="123">
+    </div>
+  </div>
+
+  <label>Country / Region</label>
+  <select id="country">
+    <option>United States</option>
+    <option>Canada</option>
+    <option>United Kingdom</option>
+    <option>Australia</option>
+    <option>Germany</option>
+    <option>Other</option>
+  </select>
+
+  <label>ZIP / Postal Code</label>
+  <input id="zip" placeholder="12345">
+
+  <button class="primary-btn full" onclick="processGiftCard()">
+    Complete Purchase
+  </button>
+
+  <p id="status" class="status"></p>
+  <p class="fine">This is a proprietary Star Client gift card.</p>
+</div>
+
+<script src="purchase.js"></script>
+</body>
+</html>
